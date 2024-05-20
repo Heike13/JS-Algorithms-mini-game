@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="title is-1">Mini Jeu : Rejoint la case rouge</h1>
+    <section class="commandPanel">
+      <h1 class="label">Tapes les commandes la dedans :</h1>
+      <textarea id="userCode" ></textarea>
+      <button id="launchScript">Lancer le script ici</button>
+      <button id="clearCode">Lancer une nouvelle game</button>
+    </section>
+
+    <container id="container">
+
+      <section id="board"></section>
+
+      <section id="commands">
+        <article>
+          <h2>Le but du jeu est de déplacer le curseur noir de la cellule bleau à la cellue rouge</h2>
+          <p>Pour cela, tu peux te déplacer en tapant ces commandes dans le tableau noir ci dessus </p>
+            <ul>
+              <li>Pour faire tourner le curseur rouge vers la gauche : <span>gauche</span></li>
+              <li>Pour faire tourner le curseur rouge vers la droite : <span>droite</span></li>
+              <li>Pour faire avancer le curseur rouge vers la case pointée : <span>avance</span></li>
+              <li>Commande spéciale : de <span>avanceX2</span> => jusqu'à => <span>avanceX6</span></li>
+            </ul>
+          <p class="warning">Tu peux relancer une nouvelle partie s'il n'y a pas de chemin jusqu'à l'arrivée </p>
+        </article>
+      </section>
+
+    </container>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+body {
+  align-content: center;
+  padding: 1rem;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+  background: #CE5937;
+  background: -moz-linear-gradient(45deg, #CE5937 0%, #1C6EA4 45%, #C59237 100%);
+  background: -webkit-linear-gradient(45deg, #CE5937 0%, #1C6EA4 45%, #C59237 100%);
+  background: linear-gradient(45deg, #CE5937 0%, #1C6EA4 45%, #C59237 100%);
+}
+
+#container {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.title {
+  text-align: center;
+}
+
+/* ====== 1er bloc : texte aréa et boutons ===== */
+.label {
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #FFFFFF;
+  text-shadow: #474747 3px 2px 2px;
+}
+.commandPanel {
+  margin: auto;
+  max-width: 1200px;
+}
+
+#userCode {
+  padding: 1rem;
+  font-family: monospace;
+  background-color: black;
+  color: greenyellow;
+  font-size: 1.4rem;
+  width: 100%;
+  min-height: 6rem;
+  border: none;
+  border-radius: 8px;
+}
+
+#launchScript, #clearCode {
+  color: black;
+  background-color: greenyellow;
+  border: 0;
+  margin: 0.625rem 0.625rem;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#launchScript:hover, #clearCode:hover {
+  background-color: cadetblue;
+  color:white;
+  transition-duration: 200ms;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+/* ====== 2eme bloc : la board ===== */
+#board {
+  margin-top: 1rem;
+  max-height: 400px;   /* pour éviter que le background ne bave sous le bloc en cas de redimensionnement de l'écran */
+  display: inline-block;
+  background-color: black;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.cellRow {
+  display: flex;
+}
+
+.cell {
+  background-color: lightgrey;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1px;
+}
+
+.cellStart {
+  background-color: rgb(28, 85, 228);
+}
+
+.cellEnd {
+  background-color: rgb(156, 4, 4);
+}
+
+.cellCurrent::after {
+  content: '>';
+  color: black;
+}
+
+.cellCurrent-top {
+  transform: rotate(-90deg);
+}
+
+.cellCurrent-bottom {
+  transform: rotate(90deg);
+}
+
+.cellCurrent-left {
+  transform: rotate(180deg);
+}
+
+.cellCurrent-right {
+  transform: rotate(0deg);
+}
+
+.bush {
+  background-color: darkgreen;
+  background-image: url('../doc/arbre.png');
+}
+
+/* ====== 3ème bloc : info commandes  ===== */
+#commands {
+  margin-left: 7rem;
+  color: lightgrey;
+}
+
+#commands span {
+font-size: x-large;
+font-weight: 700;
+}
+
+#commands h2, p {
+  font-size: larger;
+  margin-top: 0.5rem;
+}
+
+ul {
+  margin-top: 4rem;
+}
+
+ul li {
+  list-style-type: disc;
+  margin: 1rem;
+}
+
+.warning {
+  color: aliceblue;
+  font-style: oblique;
+  margin-top: 2rem;
+  text-shadow: #474747 3px 2px 2px;
+}
+
+
+
+
