@@ -1,3 +1,6 @@
+![image](https://github.com/Heike13/JS-Algorithms-mini-game/assets/157512723/12ecc489-514b-4a40-8e6d-697b1f40f5d6)
+
+
 # Mini Game: Find the way to the finish
 
 - Complete documentation of the code
