@@ -1,4 +1,5 @@
-![image](https://github.com/Heike13/JS-Algorithms-mini-game/assets/157512723/55809f53-a797-4e1b-8311-7acc65f76d20)
+![image](https://github.com/Heike13/JS-Algorithms-mini-game/assets/157512723/6f3f0357-a598-4707-aaf5-0c7b92a3741e)
+
 
 
 #### Deploy on "localhost" to test (nothing special is needed)
