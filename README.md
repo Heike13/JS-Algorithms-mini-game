@@ -1,5 +1,6 @@
 ![image](https://github.com/Heike13/JS-Algorithms-mini-game/assets/157512723/57e91524-0eb5-449a-9267-0c31833f6988)
 
+#### Deploy on "localhost" to test (nothing special is needed)
 
 # Mini Game: Find the way to the finish
 
