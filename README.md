@@ -12,7 +12,7 @@
 - Management of an "injection" fault by processing incoming data
 - Advanced Code Optimization
 
-## TODO Project 
+## TODO list
 
 - Add keyboard commands (in moves.js file)
 - Add a feature to condition the end of part (pick up the pieces)
